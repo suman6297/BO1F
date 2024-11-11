@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './Navbar.css'; // Import the CSS for styling
 import { Link } from 'react-router-dom';
+import { FaLinkedinIn, FaFacebook, FaInstagram, FaTwitter, FaWhatsapp, FaTelegram } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // To handle the mobile menu toggle
@@ -12,9 +13,29 @@ const Navbar = () => {
 
   return (
     <>
-    <div className='navbarmain'>
-    <img src="/Container.png" alt="" />
-</div>
+   <div className="topheader bg-purple-900 w-full h-10 flex justify-end items-center pr-2">
+        <ul className="flex space-x-4 ">
+          <li className="text-white text-lg hover:text-gray-300 cursor-pointer">
+            <FaLinkedinIn />
+          </li>
+          <li className="text-white text-lg hover:text-gray-300 cursor-pointer">
+            <FaFacebook />
+          </li>
+          <li className="text-white text-lg hover:text-gray-300 cursor-pointer">
+            <FaInstagram />
+          </li>
+          <li className="text-white text-lg hover:text-gray-300 cursor-pointer">
+            <FaTwitter />
+          </li>
+          <li className="text-white text-lg hover:text-gray-300 cursor-pointer">
+            <FaWhatsapp />
+          </li>
+          <li className="text-white text-lg hover:text-gray-300 cursor-pointer">
+            <FaTelegram />
+          </li>
+        </ul>
+      </div>
+
     <nav className=" navbar ">
        
         

@@ -17,19 +17,19 @@ const Home = () => {
 </h2>
 </div>
 
-<div className=' hero2 '>
+<div className=' flex justify-around mt-8 '>
     <div>
-        <h1>350+</h1>
-        <p> <FaFileAlt /> Study resourccs</p>
+        <h1 className=' text-4xl'>350+</h1>
+        <p className=' flex mt-3'> <FaFileAlt  className='mr-2'/> Study resourccs</p>
     </div>
 
-    <div>
-        <h1>115+</h1>
-        <p> <LuSchool2 /> institutions</p>
+    <div >
+        <h1 className=' text-4xl'>115+</h1>
+        <p className=' flex mt-3'> <LuSchool2 className='mr-2' /> institutions</p>
     </div>
-    <div>
-        <h1>700+</h1>
-        <p> <FaUserLarge /> users</p>
+    <div  >
+        <h1 className=' text-4xl'>700+</h1>
+        <p className=' flex mt-3'> <FaUserLarge className='mr-2 mt-1' /> users</p>
     </div>
 </div>
 
