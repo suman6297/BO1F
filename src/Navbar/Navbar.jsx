@@ -3,6 +3,9 @@ import React, { useState } from 'react';
 import './Navbar.css'; // Import the CSS for styling
 import { Link } from 'react-router-dom';
 import { FaLinkedinIn, FaFacebook, FaInstagram, FaTwitter, FaWhatsapp, FaTelegram } from "react-icons/fa";
+import { RxCross1 } from "react-icons/rx";
+import { IoReorderThreeOutline } from "react-icons/io5";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // To handle the mobile menu toggle
@@ -39,25 +42,28 @@ const Navbar = () => {
     <nav className=" navbar ">
        
         
-      <div className="navbar-container">
-        <img src="/theASSignerlogo 2.jpg" alt=""  />
+      <div className="navbar-container mx-4" >
+        <img src="/theASSignerlogo 2.jpg" alt="" className=' max-sm:w-32 '  />
        
         
         {/* Hamburger Icon */}
-        <div className="menu-icon" onClick={toggleMenu}>
-          &#9776; {/* Hamburger icon (three horizontal bars) */}
-        </div>
+       
 
         {/* Navigation Links */}
-        <ul className={` flex nav-links ${isOpen ? 'active' : ""}`}>
-          <li><Link to="/">Home</Link></li>
+        <ul className={`  nav-links  ${isOpen ? 'active' : " "} `}  >
+          <li><Link to="/" >Home</Link></li>
           <li><Link to="/about">About Us</Link></li>
           <li><Link to="/blog">Blog</Link></li>
           <li><Link to="/ourservice">Our Service</Link></li>
           <li><Link to="/itles &pts">Itles & Pts</Link></li>
           <li><Link to="/contact">Contact us</Link></li>
         </ul>
-        <button className='button'> Login</button>
+        <button className=' bg-purple-600 px-8 py-2 rounded-lg'> Login</button>
+
+        <div className="menu-icon " onClick={toggleMenu}>
+          {isOpen ? <RxCross1  className='text-white mt-2 relative md:text-5xl'/> : <IoReorderThreeOutline className='md:text-7xl' />
+ } 
+        </div>
       </div>
     </nav>
     </>
