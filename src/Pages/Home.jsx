@@ -50,7 +50,7 @@ const Home = () => {
 
 
 
-<div className='relative mt-10 font-cormorant '>
+<div className='relative mt-10 font-cormorant md:mx-6 '>
 
     <img src="/Rectangle 98.png" alt="" className='w-full  ' />
     <div className=' absolute flex justify-between inset-5  items-start '>

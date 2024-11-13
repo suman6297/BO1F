@@ -104,7 +104,7 @@ const Home2 = () => {
     <div className="md:mx-10 mt-20  bg-pink-200 rounded-md font-cormorant font-bold  ">
       <h3 className="text-center py-3 text-4xl ">Our Services</h3>
       <p className="text-center text-2xl">We offer some fantastic services</p>
-      <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 ml-20 mt-5 font-cormorant ">
+      <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 justify-center items-center ml-20 mt-5 font-cormorant ">
         {services.map((item) => (
           <div
             key={item.id}

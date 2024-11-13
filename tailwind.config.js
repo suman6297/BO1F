@@ -17,14 +17,16 @@ export default {
         purpal:'#4C0C5C',
         lightpurpal:' #A259FF',
         deeppurpal:' #9F0D76',
-        adbg:'#EE481447'
+        adbg:'#EE481447',
+        footmail:"#583781",
+        suscribe:"#BA4396"
 
 
 
         
       },
       backgroundImage: {
-        'my-image': "url('/image.png')",
+        'my-image': "url('/image (2).png')",
         
       },
       
