@@ -101,21 +101,21 @@ const Home2 = () => {
   return (
  
   
-    <div className="md:mx-10 mt-20  bg-pink-200 rounded-md ">
-      <h3 className="text-center py-3 text-4xl">Our Services</h3>
+    <div className="md:mx-10 mt-20  bg-pink-200 rounded-md font-cormorant font-bold  ">
+      <h3 className="text-center py-3 text-4xl ">Our Services</h3>
       <p className="text-center text-2xl">We offer some fantastic services</p>
-      <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 ml-10 mt-5 ">
+      <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 ml-20 mt-5 font-cormorant ">
         {services.map((item) => (
           <div
             key={item.id}
-            className="border-2 border-slate-700 w-64 h-64 mb-10 rounded-2xl shadow-md shadow-slate-700 bg-white" 
+            className="border-2 border-slate-700 w-64 h-64 mb-10 rounded-2xl duration-700 hover:scale-[1.2]  shadow-md shadow-slate-700 bg-white" 
           >
             <img
               src={item.img}
               alt="service-icon"
               className="w-64 h-40 rounded-t-2xl"
             />
-            <h4 className="ml-2 text-2xl my-2">{item.title}</h4>
+            <h4 className="ml-2 text-2xl mt-2 leading-tight">{item.title} </h4>
             <div className="flex items-center ml-2">
               <div>
               <div className="flex">

@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-   <div className="topheader bg-purple-900 w-full h-10 flex justify-end items-center pr-2">
+   <div className="topheader bg-purple-900 w-full h-10 flex justify-end items-center pr-2 ">
         <ul className="flex space-x-4 ">
           <li className="text-white text-lg hover:text-gray-300 cursor-pointer">
             <FaLinkedinIn />
@@ -39,7 +39,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-    <nav className=" navbar ">
+    <nav className=" navbar font-cormorant ">
        
         
       <div className="navbar-container mx-4" >
@@ -58,7 +58,7 @@ const Navbar = () => {
           <li><Link to="/itles &pts">Itles & Pts</Link></li>
           <li><Link to="/contact">Contact us</Link></li>
         </ul>
-        <button className=' bg-purple-600 px-8 py-2 rounded-lg'> Login</button>
+        <button className=' bg-purple-600 px-8 py-2 rounded-lg text-2xl hover:bg-purpal  duration-700 hover:scale-[1.2] '> Login</button>
 
         <div className="menu-icon " onClick={toggleMenu}>
           {isOpen ? <RxCross1  className='text-white mt-2 relative md:text-5xl'/> : <IoReorderThreeOutline className='md:text-7xl' />

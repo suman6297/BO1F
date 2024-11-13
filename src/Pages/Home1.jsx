@@ -28,7 +28,7 @@ const awesomedata =[
 ]
 
   return (
-    <div>
+    <div className='mt-20 font-cormorant'>
     <div className=' text-center mt-8 '>
         <h1 className='text-2xl md:text-3xl lg:text-5xl'>
             Awesome Features
@@ -42,7 +42,7 @@ const awesomedata =[
 
     {awesomedata.map((item ,index)=>{
         
-        return <div className=' justify-center border-2 border-gray-500 shadow-gray-500 shadow-md  p-3  rounded-lg ' key={index}>
+        return <div className=' justify-center border-2 border-gray-500 duration-700 hover:scale-[1.2]  shadow-gray-500 shadow-md  p-3  rounded-lg ' key={index}>
             <h1 className=' text-center justify-center items-center bold'>
                 <img src={item.image} alt="" className='text-center justify-center items-center block m-auto' /> </h1>
             <br/>
