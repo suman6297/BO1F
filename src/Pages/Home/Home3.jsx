@@ -12,12 +12,12 @@ const Home3 = () => (
     <h2 className="text-3xl font-bold font-cormorant mb-4">Our Assistance's advantages</h2>
     <p className="text-gray-600 mb-8 text-xl">The Assigner wants to build a strong foundation that will enable students to soar to achievement.</p>
     <div className=' flex justify-end '>
-    <img src="/OBJECTS.png" alt=""  className=' -rotate-90 absolute mr-52  max-lg:hidden'/>
+    <img src="/OBJECTS.png" alt=""  className=' -rotate-90 absolute mr-48  max-lg:hidden'/>
     </div>
 
     <div className="flex justify-center items-center space-x-10 font-cormorantn max-md:flex-col  max-md:space-y-8   ">
       {advantages.map((adv, index) => (
-        <div key={index} className="bg-adbg p-6  w-60 text-center duration-700 hover:scale-[1.2]  font-cormorant border-2 border-gray-500 shadow-gray-500 shadow-md rounded-lg">
+        <div key={index} className="bg-adbg p-6  w-60 text-center duration-700 hover:scale-[1.1]  font-cormorant border-2 border-gray-500 shadow-gray-500 shadow-md rounded-lg">
           <h3 className=" font-semibold mb-2 text-black text-xl">{adv.title}</h3>
           <p className="text-gray-700">{adv.description}</p>
         </div>

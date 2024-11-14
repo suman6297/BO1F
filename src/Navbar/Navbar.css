@@ -53,9 +53,17 @@
     font-size: 1.5rem;
     transition: color 0.3s ease;
   }
+  .nav-links li :focus{
+    background-color:purple;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+  }
+
   
   .nav-links li a:hover {
-    color: purple;
+    /* color: purple; */
+
    
      font-weight: bold;
   }

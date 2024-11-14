@@ -8,10 +8,10 @@ import { IoReorderThreeOutline } from "react-icons/io5";
 
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); // To handle the mobile menu toggle
+  const [isOpen, setIsOpen] = useState(false); 
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen); // Toggle the menu open/close state
+    setIsOpen(!isOpen); 
   };
 
   return (
@@ -51,14 +51,15 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <ul className={`  nav-links  ${isOpen ? 'active' : " "} `}  >
-          <li><Link to="/" >Home</Link></li>
-          <li><Link to="/about">About Us</Link></li>
-          <li><Link to="/blog">Blog</Link></li>
-          <li><Link to="/ourservice">Our Service</Link></li>
-          <li><Link to="/itles &pts">Itles & Pts</Link></li>
-          <li><Link to="/contact">Contact us</Link></li>
+          <li className='relative group'><Link to="/" >Home</Link><span className="absolute -bottom-7 rounded-md left-0 w-full h-1 bg-purpal transform scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-left"></span></li>
+          <li className='relative group'><Link to="/about">About Us</Link> <span className="absolute -bottom-7 rounded-md left-0 w-full h-1 bg-purpal transform scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-left"></span></li>
+          <li className='relative group'><Link to="/blog">Blog</Link> <span className="absolute -bottom-7 rounded-md left-0 w-full h-1 bg-purpal transform scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-left"></span></li>
+          <li className='relative group'><Link to="/ourservice">Our Service</Link> <span className="absolute -bottom-7 rounded-md left-0 w-full h-1 bg-purpal transform scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-left"></span></li>
+          <li className='relative group'><Link to="/itles &pts">Itles & Pts</Link><span className="absolute -bottom-7 rounded-md left-0 w-full h-1 bg-purpal transform scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-left"></span></li>
+          <li className='relative group'><Link to="/contact">Contact us</Link>
+          <span className="absolute -bottom-7 rounded-md left-0 w-full h-1 bg-purpal transform scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-left"></span></li>
         </ul>
-        <button className=' bg-purple-600 px-8 py-2 rounded-lg text-2xl hover:bg-purpal  duration-700 hover:scale-[1.2] '> Login</button>
+        <button className=' bg-purple-600 px-8 py-2 rounded-lg text-2xl hover:bg-purpal  duration-700 hover:scale-[1.1] '> Login</button>
 
         <div className="menu-icon " onClick={toggleMenu}>
           {isOpen ? <RxCross1  className='text-white mt-2 relative md:text-5xl'/> : <IoReorderThreeOutline className='md:text-7xl' />
